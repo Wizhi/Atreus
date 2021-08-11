@@ -12,25 +12,10 @@
 #include "Kaleidoscope-Qukeys.h"
 #include "Kaleidoscope-SpaceCadet.h"
 
-
-
-#define MO(n) ShiftToLayer(n)
-#define TG(n) LockLayer(n)
-
 enum {
 	MACRO_QWERTY,
 	MACRO_VERSION_INFO
 };
-
-#define Key_Exclamation LSHIFT(Key_1)
-#define Key_At LSHIFT(Key_2)
-#define Key_Hash LSHIFT(Key_3)
-#define Key_Dollar LSHIFT(Key_4)
-#define Key_Percent LSHIFT(Key_5)
-#define Key_Caret LSHIFT(Key_6)
-#define Key_And LSHIFT(Key_7)
-#define Key_Star LSHIFT(Key_8)
-#define Key_Plus LSHIFT(Key_Equals)
 
 enum {
 	QWERTY
