@@ -16,10 +16,10 @@ enum {
 KEYMAPS(
 	[QWERTY] = KEYMAP_STACKED
 	(
-		Key_Q,             Key_W, Key_E, Key_R,         Key_T,
-		Key_A,             Key_S, Key_D, LT(NUMPAD, F), Key_G,
-		SFT_T(Z),          Key_X, Key_C, Key_V,         Key_B,     ___,
-		LockLayer(NUMPAD), ___,   ___,   ___,           Key_Space, Key_Enter,
+		Key_Q,    Key_W, Key_E, Key_R,         Key_T,
+		Key_A,    Key_S, Key_D, LT(NUMPAD, F), Key_G,
+		SFT_T(Z), Key_X, Key_C, Key_V,         Key_B,     ___,
+		___,      ___,   ___,   Key_LeftGui,   Key_Space, Key_Enter,
 
 		         Key_Y,         Key_U, Key_I,     Key_O,      Key_P,
 		         Key_H,         Key_J, Key_K,     Key_L,      Key_Semicolon,
@@ -28,10 +28,10 @@ KEYMAPS(
 	),
 	[NUMPAD] = KEYMAP_STACKED
 	(
-		___,                 ___, ___, ___, ___,
-		___,                 ___, ___, ___, ___,
-		___,                 ___, ___, ___, ___, ___,
-		UnlockLayer(NUMPAD), ___, ___, ___, ___, ___,
+		___, ___, ___, ___, ___,
+		___, ___, ___, ___, ___,
+		___, ___, ___, ___, ___, ___,
+		___, ___, ___, ___, ___, ___,
 
 		     Key_Period, Key_1,     Key_2, Key_3, ___,
 		     Key_0,      Key_4,     Key_5, Key_6, Key_Plus,
