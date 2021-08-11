@@ -33,7 +33,7 @@ KEYMAPS(
 		___, ___, ___, ___, ___, ___,
 		___, ___, ___, ___, ___, ___,
 
-		     Key_Period, Key_1,     Key_2, Key_3, ___,
+		     Key_Period, Key_1,     Key_2, Key_3, Key_Equals,
 		     Key_0,      Key_4,     Key_5, Key_6, Key_Plus,
 		___, Key_Star,   Key_7,     Key_8, Key_9, Key_Minus,
 		___, ___,        Key_Slash, ___,   ___,   ___
