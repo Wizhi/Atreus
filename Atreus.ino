@@ -3,6 +3,7 @@
 #endif
 
 #include "Kaleidoscope.h"
+#include "Kaleidoscope-Qukeys.h"
 
 #define Key_Star LSHIFT(Key_8)
 #define Key_Plus LSHIFT(Key_Equals)
@@ -17,12 +18,12 @@ KEYMAPS(
 	(
 		Key_Q,             Key_W, Key_E, Key_R, Key_T,
 		Key_A,             Key_S, Key_D, Key_F, Key_G,
-		Key_Z,             Key_X, Key_C, Key_V, Key_B,     ___,
+		SFT_T(Z),          Key_X, Key_C, Key_V, Key_B,     ___,
 		LockLayer(NUMPAD), ___,   ___,   ___,   Key_Space, Key_Enter,
 
 		         Key_Y,         Key_U, Key_I,     Key_O,      Key_P,
 		         Key_H,         Key_J, Key_K,     Key_L,      Key_Semicolon,
-		___,     Key_N,         Key_M, Key_Comma, Key_Period, Key_Slash,
+		___,     Key_N,         Key_M, Key_Comma, Key_Period, SFT_T(Slash),
 		Key_Tab, Key_Backspace,  ___,  ___,       ___,        ___
 	),
 	[NUMPAD] = KEYMAP_STACKED
@@ -38,6 +39,8 @@ KEYMAPS(
 		___, ___,        Key_Slash, ___,   ___,   ___
 	)
 )
+
+KALEIDOSCOPE_INIT_PLUGINS(Qukeys);
 
 void setup() {
 	Kaleidoscope.setup();
